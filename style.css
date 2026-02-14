@@ -1,0 +1,111 @@
+body {
+  font-family: "Arimo", sans-serif;
+  background-color: #f3f4f6;
+}
+
+h1,
+h2,
+h3,
+.brand-font {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b91c1c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #991b1b;
+}
+
+.spec-table td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 8px 12px;
+  font-size: 13px;
+  vertical-align: top;
+}
+
+.spec-table tr:last-child td {
+  border-bottom: none;
+}
+
+.spec-header {
+  width: 130px;
+  color: #b91c1c;
+  font-weight: bold;
+  background-color: #fef2f2;
+}
+
+.spec-category {
+  background-color: #d1d5db;
+  font-weight: bold;
+  color: #1f2937;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+}
+
+.dense-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.phone-card {
+  transition: all 0.2s;
+  border: 1px solid #e5e7eb;
+  background: white;
+}
+
+.phone-card:hover {
+  border-color: #b91c1c;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  z-index: 10;
+}
+
+.page-btn.active {
+  background-color: #b91c1c;
+  color: white;
+  border-color: #b91c1c;
+}
+
+.phone-img-container {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fff;
+  padding: 10px;
+  position: relative;
+}
+
+.phone-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.phone-card:hover .phone-img {
+  transform: scale(1.05);
+}
+
+.modal-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #b91c1c #e5e7eb;
+}
